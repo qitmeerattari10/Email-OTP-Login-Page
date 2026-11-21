@@ -1,0 +1,14 @@
+{
+  "name": "email-otp-login-page",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --names API,WEB \"npm --prefix backend\\api run dev\" \"npm --prefix frontend run dev\"",
+    "dev:api": "npm --prefix backend\\api run dev",
+    "dev:web": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

@@ -22,7 +22,7 @@ export async function apiRequest(path, { body, token } = {}) {
     });
   } catch (error) {
     if (error instanceof TypeError) {
-      throw new Error('Could not connect to the backend. Start the API server or check VITE_API_URL.');
+      throw new Error('Cannot reach the API. Start the backend, check its MongoDB connection, and verify VITE_API_URL.');
     }
     throw error;
   }
